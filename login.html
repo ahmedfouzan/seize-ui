@@ -1,0 +1,59 @@
+ <html>
+ <head>
+ 	<link href="/login.css" rel="stylesheet">
+ 	</link>
+ 	<script type="javascript">
+ 	function sendData()
+ 	{
+			 		var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function()
+			 {
+				 if (this.readyState == 4 && this.status == 200) 
+				 {
+					 // Typical action to be performed when the document is ready:
+					 //document.getElementById("result").innerHTML = xhttp.responseText;
+					 myobj = JSON.parse(this.responseText);
+				 }
+			};
+			xhttp.open("GET", "filename", true);
+			xhttp.send();
+ 	
+ 	
+ 	
+ 	}
+ 	</script>
+ 
+ </head>
+ 
+ <body>
+	 <form action="action_page.php">
+	  <div class="imgcontainer">
+		 <img src="img_avatar2.png" alt="Avatar" class="avatar">
+	  </div>
+
+	  <div class="container">
+		 <label><b>Username</b></label>
+		 <input type="text" placeholder="Enter Username" name="uname" required><br>
+
+		 <label><b>Password</b></label>
+		 <input type="password" placeholder="Enter Password" name="psw" required><br>
+
+		 <button type="submit" onclick ="sendData()">Login</button>
+		 
+		<!-- <label>
+		   <input type="checkbox" checked="checked"> Remember me
+		 </label>-->
+	  </div>
+	  
+	  <div class="result">
+	  	
+	  
+	  </div>
+
+	  <!--<div class="container" style="background-color:#f1f1f1">
+		 <button type="button" class="cancelbtn">Cancel</button>
+		 <span class="psw">Forgot <a href="#">password?</a></span>
+	  </div>-->
+	</form> 
+ </body>
+</html>
