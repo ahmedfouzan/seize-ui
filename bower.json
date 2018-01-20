@@ -1,0 +1,10 @@
+{
+  "name": "seize-ui",
+  "homepage": "https://github.com/ahmedfouzan/seize-ui",
+  "authors": [
+    "kmmanoj <kmmanoj1990@gmail.com>"
+  ],
+  "description": "ZeissConnect",
+  "main": "index.html",
+  "license": "None"
+}
