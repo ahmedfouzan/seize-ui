@@ -6,5 +6,9 @@
   ],
   "description": "ZeissConnect",
   "main": "index.html",
-  "license": "None"
+  "license": "None",
+  "dependencies": {
+    "uikit": "^2.27.5",
+    "bootstrap": "^4.0.0"
+  }
 }
